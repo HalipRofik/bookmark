@@ -1,0 +1,137 @@
+.download {
+  width: 100%;
+  text-align: center;
+  margin-top: 165px;
+
+  p {
+    width: 35%;
+    display: inline-block;
+  }
+}
+
+.download-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+
+  .download-card {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 3px 4px 13px -6px rgba(0, 0, 0, 0.31);
+
+    .img-card {
+      margin-top: 30px;
+      width: 100%;
+      padding: 0 90px;
+    }
+
+    h3 {
+      margin-top: 32px;
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--dark-blue);
+    }
+
+    p {
+      margin-top: 18px;
+    }
+
+    .dots {
+      width: 100%;
+      margin-top: 40px;
+
+      img {
+        object-fit: contain;
+      }
+    }
+
+    .btn-card {
+      width: 100%;
+      padding: 20px 25px;
+
+      & .btng {
+        display: block;
+        background: var(--soft-blue);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.download-card:nth-child(2) {
+  transform: translateY(10%);
+}
+
+.download-card:nth-child(3) {
+  transform: translateY(20%);
+}
+
+@media (max-width: 500px) {
+  .download {
+    margin-top: 80px;
+    padding: 0 30px;
+
+    h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        width: 100%;
+        display: block;
+    }
+  }
+  .download-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    gap: 30px;
+    margin-top: 45px;
+
+    .download-card {
+      width: 100%;
+      
+      .img-card {
+        margin-top: 18px;
+      }
+
+      h3 {
+        margin-top: 28px;
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .dots {
+        margin-top: 30px;
+      }
+
+      .btn-card {
+        padding: 20px 18px;
+
+        & .btng {
+          display: block;
+          font-size: 12px;
+          background: var(--soft-blue);
+          padding: 14px 20px;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .download-card:nth-child(2) {
+    transform: translateY(0%);
+  }
+
+  .download-card:nth-child(3) {
+    transform: translateY(0%);
+  }
+}

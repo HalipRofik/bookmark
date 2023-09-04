@@ -1,0 +1,91 @@
+.book-container {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 118px;
+  padding-right: 170px;
+}
+
+.book-img {
+  width: 60%;
+  position: relative;
+
+  & img {
+    object-fit: cover;
+    padding-left: 100px;
+  }
+}
+
+.book-img::before {
+  content: "";
+  width: 85%;
+  height: 75%;
+  background: var(--soft-blue);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom-right-radius: 148px;
+  z-index: -2;
+}
+
+.book-content {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  .btn-hero_container {
+    display: inline-flex;
+    gap: 24px;
+
+    & .btn-info {
+      background: var(--soft-blue);
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .book-container {
+    margin-top: 270px;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 42px;
+  }
+
+  .book-img {
+    width: 100%;
+
+    & img {
+      padding-left: 0;
+    }
+  }
+
+  .book-content {
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    text-align: center;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .btn-hero_container {
+      display: none;
+    }
+  }
+}
