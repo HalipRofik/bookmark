@@ -1,1 +1,2 @@
-# bookmark web yang hanya resvonsive di layar mobile maksimal 500px.
+# bookmark web yang hanya resvonsive di layar mobile maksimal 500px. html css only
+
